@@ -78,12 +78,12 @@ function updateForecastItems(weatherData) {
 }
 
 function getWeatherIcon(id) {
-    if (id >= 200 && id <= 232) return '../weather/thunderstorm.svg'; // Thunderstorm
-    if (id >= 300 && id <= 321) return '../weather/drizzle.svg';      // Drizzle
-    if (id >= 500 && id <= 531) return '../weather/rain.svg';         // Rain
-    if (id === 800) return '../weather/clear.svg';                    // Clear sky
-    if (id >= 801 && id <= 804) return '../weather/clouds.svg';       // Clouds
-    return '../weather/clouds.svg';                                     // Default to clouds
+    if (id >= 200 && id <= 232) return 'thunderstorm.svg'; 
+    if (id >= 300 && id <= 321) return 'drizzle.svg';      
+    if (id >= 500 && id <= 531) return 'rain.svg';         
+    if (id === 800) return 'clear.svg';                    
+    if (id >= 801 && id <= 804) return 'clouds.svg';      
+    return 'clouds.svg';                                     
 }
 
 function getCurrentDate() {
