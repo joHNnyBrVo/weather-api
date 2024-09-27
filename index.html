@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="/bg/clouds-and-sun.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather API</title>
+</head>
+<body>
+    <header>
+        <h1>Lab 3: Practical Implementation of a Simple System Integration</h1>
+        <p>John Loyd B. Maskariño</p>
+    </header>
+
+    <div class="box-container">
+        <div id="box-1">
+            <h3>Leyte, Philippines Weather Forecast</h3>
+            <label for="select">Choose a location:</label>
+            <select name="select" id="selectedLocation">
+                <option value="" disabled selected>Select</option>
+                <option value="Tacloban">Tacloban City</option>
+                <option value="Ormoc">Ormoc City</option>
+                <option value="Baybay">Baybay City</option>
+                <option value="Albuera">Albuera</option>
+                <option value="Palo">Palo</option>
+                <option value="Bato">Bato</option>
+                <option value="Isabel">Isabel</option>
+                <option value="Dulag">Dulag</option>
+            </select>
+
+            <button class="btn">
+                Get Weather
+            </button>
+        </div>
+
+        <div id="box-2" style="display: none;">
+            <div class="container-1">
+                <div class="weather-summary-container">
+                    <h5 class="current-date-txt">Thurs, 26 Sep</h5>
+                    <img src="weather/clear-sky.png" class="weather-img">
+                    <div class="weather-summary-info">
+                        <h1 class="temp-txt">29 °C</h1>
+                        <h2 class="condition-txt">Sunny</h2>
+                    </div>
+                    <div class="location-container">
+                        <span class="location-img"><img src="bg/location.png"></span>
+                        <h3 class="location-txt">Tacloban City</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-2">
+                <div class="weather-condition-container">
+                    <h3 class="weather-label">Weather Conditions</h3>
+                    <div class="weather-condition-item">
+                        <span><img src="/bg/water_drop.png"></span>
+                        <h5 class="humidity-txt">Humidity</h5>
+                        <h5 class="humidity-value">55%</h5>
+                    </div>
+                    <div class="weather-condition-item">
+                        <span><img src="/bg/air.png"></span>
+                        <h5 class="wind-speed">Wind Speed</h5>
+                        <h5 class="wind-speed-value">2 m/s</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-3">
+                <h3 class="forecast-label">Forecast for Tomorrow</h3>
+                <div class="weather-forecast-items-container">
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date">Sep 25</h5>
+                        <img src="weather/clear-sky.png">
+                        <h5 class="forecast-item-temp">30 °C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date">Sep 24</h5>
+                        <img src="weather/clear-sky.png">
+                        <h5 class="forecast-item-temp">30 °C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date">Sep 23</h5>
+                        <img src="weather/clear-sky.png">
+                        <h5 class="forecast-item-temp">30 °C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date">Sep 22</h5>
+                        <img src="weather/clear-sky.png">
+                        <h5 class="forecast-item-temp">30 °C</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Weather API all rights Reserved 2024</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
